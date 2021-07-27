@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?bc7d7cd6abfb52da85e91445750bb6b2") format("truetype"),
+url("./flaticon.woff?bc7d7cd6abfb52da85e91445750bb6b2") format("woff"),
+url("./flaticon.woff2?bc7d7cd6abfb52da85e91445750bb6b2") format("woff2"),
+url("./flaticon.eot?bc7d7cd6abfb52da85e91445750bb6b2#iefix") format("embedded-opentype"),
+url("./flaticon.svg?bc7d7cd6abfb52da85e91445750bb6b2#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "black-settings-button": "\f101",
+    "pencil": "\f102",
+    "layers": "\f103",
+    "open-folder-with-document": "\f104",
+);
+
+.flaticon-black-settings-button:before {
+    content: map-get($flaticon-map, "black-settings-button");
+}
+.flaticon-pencil:before {
+    content: map-get($flaticon-map, "pencil");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-open-folder-with-document:before {
+    content: map-get($flaticon-map, "open-folder-with-document");
+}
